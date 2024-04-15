@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-step form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <img src="/images/bg-sidebar-desktop.svg" class="desktop-img" alt="sidebar-img">
+            <img src="/images/bg-sidebar-mobile.svg" class="mobile-img" alt="sidebar-img">
+            <div class="form-number">
+                <p class="number number1">1</p>
+                <p class="number number2">2</p>
+                <p class="number number3">3</p>
+                <p class="number number4">4</p>
+            </div>
+            <div class="form-number-desktop">
+                <div class="desktop-number">
+                    <p class="number number1">1</p>
+                    <div>
+                        <p>Step 1</p>
+                        <p>YOUR INFO</p>
+                    </div>
+                </div>
+                <div class="desktop-number">
+                    <p class="number number2">2</p>
+                    <div>
+                        <p>Step 2</p>
+                        <p>SELECT PLAN</p>
+                    </div>
+                </div>
+                <div class="desktop-number">
+                    <p class="number number3">3</p>
+                    <div>
+                        <p>Step 3</p>
+                        <p>ADD-ONS</p>
+                    </div>
+                </div>
+                <div class="desktop-number">
+                    <p class="number number4">4</p>
+                    <div>
+                        <p>Step 4</p>
+                        <p>SUMMARY</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right ">
+            <div class="form1 forms hidden">
+                <h1>Personal info</h1>
+                <p> Please provide your name, email address, and phone number.</p>
+                <form>
+                    <label for="name">Name<input type="text" id="name"> <span class="error error-name"></span></label>
+                    <label for="email">Email address<input type="email" id="email"> <span class="error error-email"></span></label>
+                    <label for="phone-number">Phone Number<input type="number" id="phone-number"> <span class="error error-number"></span></label>
+                </form>
+
+            </div>
+            <div class="form2 forms hidden">
+                <h1>Select your plan</h1>
+                <p> You have the option of monthly or yearly billing.</p>
+
+                <div class="pricing-container">
+                    <div class="card card-selected">
+                        <img src="/images/icon-arcade.svg" alt="">
+                        <div class="card-content">
+                            <h3>Arcade</h3>
+                            <p class="plan-charge">$9/mo</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/images/icon-advanced.svg" alt="">
+                        <div class="card-content">
+                            <h3>Advanced</h3>
+                            <p class="plan-charge">$12/mo</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/images/icon-pro.svg" alt="">
+                        <div class="card-content">
+                            <h3>Pro</h3>
+                            <p class="plan-charge">$15/mo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="select-plan">
+                    <p>Monthly</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Yearly</p>
+
+                </div>
+
+            </div>
+            <div class="form3 forms hidden">
+                <h1>Pick add-ons</h1>
+                <p>Add-ons help enhance your gaming experience.</p>
+
+                <div class="add-ons-container">
+                    <div class="add-on">
+                        <div class="addOn-left">
+                            <input type="checkbox">
+                            <div class="add-on-content">
+                                <h4>Online service</h4>
+                                <p>Access to multiple games</p>
+                            </div>
+                        </div>
+                        <div class="addOn-right">
+                            <p>+1/mo</p>
+                        </div>
+                    </div>
+                    <div class="add-on">
+                        <div class="addOn-left">
+                            <input type="checkbox">
+                            <div class="add-on-content">
+                                <h4>Larger storage</h4>
+                                <p>Extra 1TB of cloud save</p>
+                            </div>
+                        </div>
+                        <div class="addOn-right">
+                            <p>+2/mo</p>
+                        </div>
+                    </div>
+                    <div class="add-on">
+                        <div class="addOn-left">
+                            <input type="checkbox">
+                            <div class="add-on-content">
+                                <h4>Customizable Profile</h4>
+                                <p>Custom theme on your profile</p>
+                            </div>
+                        </div>
+                        <div class="addOn-right">
+                            <p>+2/mo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form4 forms hidden">
+                <h1>Finishing up</h1>
+                <p>Double-check everything looks OK before confirming.</p>
+                <div class="summary-container">
+                    <div class="yearly-monthly-plan">
+                        <div>
+                            <h4 class="planName">Arcade(Monthly)</h4>
+                            <a href="#" class="change-plan">Change</a>
+                        </div>
+                        <h4 class="planPrice">$90/yr</h4>
+                    </div>
+                    <hr>
+                    <div class="summary-addons-container"></div>
+                
+            </div>
+            <div class="summary-total">
+                <p>Arcade(Yearly)</p>
+                <p>$120/yr</p>
+            </div>
+            </div>
+            <div class="success forms hidden">
+                <img src="./images/icon-thank-you.svg" alt="thank-you-img">
+                <h1>Thank you!</h1>
+                <p>Thanks for confirming your subscription! We hope you have fun 
+                    using our platform. If you ever need support, please feel free 
+                    to email us at support@loremgaming.com.</p>
+            </div>
+            <div class="buttons">
+                <button class="back-button">back</button>
+                <button type="submit" class="next-button">Next step</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js" defer></script>
+</body>
+
+</html>
